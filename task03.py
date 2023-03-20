@@ -19,16 +19,16 @@ os.system('cls')
  
 
 
-points = input('Введите слово: ').upper()
+world = input('Введите слово: ').upper()
 dct = {
     'AEIOULNSTRАВЕИНОРСТ' : 1, 'DGДКЛМПУ' : 2, 'BCMPБГЁЬЯ' : 3,
     'FHVWYЙЫ' : 4, 'KЖЗХЦЧ' : 5, 'JXШЭЮ' : 8, 'QZФЩЪ' :10
     }
-summ = 0
-for i in range(len(points)):
+points = 0
+for i in range(len(world)):
     for key in dct:     
-            if points[i] in key:
-                summ += dct[key]
+            if world[i] in key:
+                points += dct[key]
  
 
-print(summ)
+print(points)
